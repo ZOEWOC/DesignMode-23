@@ -10,7 +10,14 @@ import java.util.Scanner;
  */
 
 interface Shape extends Cloneable {
-    public Object clone();
+    /**
+     * @title 复制
+     * @description 原型模式 复制方法
+     * @author zoewoc
+     * @updateTime 2020/9/23 3:17 下午
+     * @throws
+     */
+    Object clone();
 
     /**
      * @throws
@@ -19,7 +26,7 @@ interface Shape extends Cloneable {
      * @author zoewoc
      * @updateTime 2020/9/23 2:51 下午
      */
-    public void calcArea();
+    void calcArea();
 }
 
 class Circle implements Shape {
@@ -87,10 +94,10 @@ class ProtoTypeManager {
 
 public class ProtoTypeShape {
     public static void main(String[] args) {
-        ProtoTypeManager ptM=new ProtoTypeManager();
-        Shape shape1=ptM.getShape("Circle");
+        ProtoTypeManager ptM = new ProtoTypeManager();
+        Shape shape1 = ptM.getShape("Circle");
         shape1.calcArea();
-        Shape shape2=ptM.getShape("Square");
+        Shape shape2 = ptM.getShape("Square");
         shape2.calcArea();
     }
 }
