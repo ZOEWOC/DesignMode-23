@@ -2,7 +2,7 @@
  * @author admin
  * @version 1.0.0
  * @ClassName Prototype.java
- * @Description TODO
+ * @Description 原型模式基础 例子
  * @createTime 2020年09月21日 16:28:00
  */
 
