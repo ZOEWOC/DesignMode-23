@@ -8,8 +8,10 @@
 public class FruitFactory {
 
     //实现方式1
+
     /**
      * 获取苹果实例
+     *
      * @return
      */
     public static Fruit getApple() {
@@ -18,6 +20,7 @@ public class FruitFactory {
 
     /**
      * 获取香蕉实例
+     *
      * @return
      */
     public static Fruit getBanana() {
@@ -38,7 +41,7 @@ public class FruitFactory {
 
     //实现方式3  扩展性好，适应性弱
     public static Fruit getFruit1(String type) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
-            Class fruit=Class.forName(type);
-            return (Fruit)fruit.newInstance();
+        Class fruit = Class.forName(type);
+        return (Fruit) fruit.newInstance();
     }
 }

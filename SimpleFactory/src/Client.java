@@ -7,10 +7,10 @@
  */
 public class Client {
     public static void main(String[] args) {
-        Product p1=(Product) SimpleFactory.makeProduct(0);
+        Product p1 = (Product) SimpleFactory.makeProduct(0);
         System.out.println(p1);
         p1.show();
-        Product p2=(ConcreteProduct2)SimpleFactory.makeProduct(1);
+        Product p2 = (ConcreteProduct2) SimpleFactory.makeProduct(1);
         System.out.println(p2);
         p2.show();
         System.out.println(SimpleFactory.makeProduct(2));

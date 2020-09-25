@@ -12,14 +12,14 @@ public class MainClass {
         Fruit banana = FruitFactory.getBanana();
         banana.get();
 
-        Fruit apple1=FruitFactory.getFruit("apple");
+        Fruit apple1 = FruitFactory.getFruit("apple");
         apple1.get();
-        Fruit banana1=FruitFactory.getFruit("banana");
+        Fruit banana1 = FruitFactory.getFruit("banana");
         banana1.get();
 
-        Fruit apple2=FruitFactory.getFruit1("Apple");
+        Fruit apple2 = FruitFactory.getFruit1("Apple");
         apple1.get();
-        Fruit banana2=FruitFactory.getFruit1("Banana");
+        Fruit banana2 = FruitFactory.getFruit1("Banana");
         banana1.get();
     }
 }
