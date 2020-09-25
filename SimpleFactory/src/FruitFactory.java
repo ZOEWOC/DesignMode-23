@@ -31,6 +31,7 @@ public class FruitFactory {
         } else if ("banana".equalsIgnoreCase(type)) {
             return Banana.class.newInstance();
         } else {
+            System.out.println("找不到相应的实例化类");
             return null;
         }
     }
