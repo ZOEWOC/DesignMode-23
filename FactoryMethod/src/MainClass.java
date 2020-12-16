@@ -2,7 +2,7 @@
  * @author zoewoc
  * @version 1.0.0
  * @ClassName MainClass.java
- * @Description TODO
+ * @Description 工厂方法模式 测试类
  * @createTime 2020年09月25日 10:53:00
  */
 public class MainClass {
